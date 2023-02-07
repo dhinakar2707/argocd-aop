@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: argo-cd-argocd-repo-server
+  name: argocd-repo-server
 spec:
   template:
     spec:
       containers:
-      - name: argo-cd-argocd-repo-server
+      - name: argocd-repo-server
         volumeMounts:
         - name: custom-tools
           mountPath: /usr/local/bin/argocd-vault-plugin
