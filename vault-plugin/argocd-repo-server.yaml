@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: argocd-repo-server
+  name: argo-cd-argocd-repo-server
 spec:
   template:
     spec:
@@ -29,7 +29,7 @@ spec:
             name: custom-tools
 
       containers:
-      - name: argocd-repo-server
+      - name: argo-cd-argocd-repo-server
 
         volumeMounts:
         - name: custom-tools
