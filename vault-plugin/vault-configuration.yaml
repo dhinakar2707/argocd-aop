@@ -5,7 +5,7 @@ metadata:
   name: vault-configuration
   namespace: argocd
 type: Opaque
-data:
+stringData:
   VAULT_ADDR: http://vault.du.aop-dev.aws.actiandatacloud.com:8200
   AVP_AUTH_TYPE: token
   VAULT_TOKEN: hvs.AShwnmGaL6vffghrucyUS2Xp
