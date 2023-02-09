@@ -6,7 +6,7 @@ metadata:
   namespace: argocd
 type: Opaque
 data:
-  VAULT_ADDR: aHR0cDovL3ZhdWx0LmR1LmFvcC1kZXYuYXdzLmFjdGlhbmRhdGFjbG91ZC5jb206ODIwMA==
-  AVP_AUTH_TYPE: dG9rZW4=
-  VAULT_TOKEN: aHZzLkFTaHdubUdhTDZ2ZmZnaHJ1Y3lVUzJYcA==
-  AVP_TYPE: dmF1bHQ=
+  VAULT_ADDR: http://vault.du.aop-dev.aws.actiandatacloud.com:8200
+  AVP_AUTH_TYPE: token
+  VAULT_TOKEN: hvs.AShwnmGaL6vffghrucyUS2Xp
+  AVP_TYPE: vault
