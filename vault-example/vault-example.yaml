@@ -6,7 +6,7 @@ metadata:
     avp.kubernetes.io/path: "secret/data/aop/application"
 type: Opaque
 stringData:
-  username: <username>
-  password: <password>
-  postgresPassword: <postgresPassword>
-  database: <database>
+  UAERNAME: <username>
+  PASSWORD: <password>
+  POSTGRESPASSWORD: <postgresPassword>
+  DATABASE: <database>
