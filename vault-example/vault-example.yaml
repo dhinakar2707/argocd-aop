@@ -5,7 +5,7 @@ metadata:
   annotations:
     avp.kubernetes.io/path: "secret/aop/application"
 type: Opaque
-Data:
+stringData:
   username: <username>
   password: <password>
   postgresPassword: <postgresPassword>
