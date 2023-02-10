@@ -1,0 +1,9 @@
+kind: Secret
+apiVersion: v1
+metadata:
+  name: database-example
+  annotations:
+    avp.kubernetes.io/path: "secrets/aop/data/database"
+type: Opaque
+data:
+  PASSWORD: <password>
