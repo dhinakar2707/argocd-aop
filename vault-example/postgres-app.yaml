@@ -12,7 +12,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   syncPolicy: {}
   source:
-    path: postgres-example/
+    path: postgres-example
     repoURL: https://github.com/dhinakar2707/argocd-aop.git
     targetRevision: master
     directory:
@@ -25,4 +25,4 @@ spec:
       # Helm values files for overriding values in the helm chart
       # The path is relative to the spec.source.path directory defined above
       valueFiles:
-      - value.yaml
+      - values.yaml
