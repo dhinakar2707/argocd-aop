@@ -1,5 +1,5 @@
 auth:
-  postgresPassword: "P0stgr35"
-  username: "usage-service"
-  password: "p0stgr35"
-  database: "usage"
+  postgresPassword: "<postgresPassword>"
+  username: "<username>"
+  password: "<password>"
+  database: "<database>"
