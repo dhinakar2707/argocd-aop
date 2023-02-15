@@ -1,7 +1,8 @@
 apiVersion: v2
 name: usage-postgres
 version: 0.1.0
+type: application
 dependencies:
-- name: postgresql
+- name: usage-postgres
   version: 12.1.15
-  repository: https://charts.bitnami.com/bitnami
+  repository: https://charts.bitnami.com/bitnami/postgresql
