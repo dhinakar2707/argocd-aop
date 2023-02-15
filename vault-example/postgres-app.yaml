@@ -14,7 +14,7 @@ spec:
   source:
     path: postgres-example
     repoURL: https://github.com/dhinakar2707/argocd-aop.git
-    targetRevision: master
+    targetRevision: HEAD
     directory:
       recurse: true
     # helm specific config
