@@ -22,10 +22,10 @@ spec:
 
       # Helm values files for overriding values in the helm chart
       # The path is relative to the spec.source.path directory defined above
-      #valueFiles:
-      #- values.yaml
-    plugin:
-      name: argocd-vault-plugin-helm
-      env:
-        - name: helm_args
-          value: --namespace=postgres-example -f values.yaml
+      valueFiles:
+      - values.yaml
+    #plugin:
+      #name: argocd-vault-plugin-helm
+      #env:
+        #- name: helm_args
+          #value: --namespace=postgres-example -f values.yaml
