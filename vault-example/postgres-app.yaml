@@ -24,8 +24,8 @@ spec:
       # The path is relative to the spec.source.path directory defined above
       valueFiles:
       - values.yaml
-    #plugin:
+    plugin:
       #name: argocd-vault-plugin-helm
-      #env:
-        #- name: helm_args
-          #value: --namespace=postgres-example -f values.yaml
+      env:
+        - name: helm_args
+          value: -f values.yaml
