@@ -1,5 +1,5 @@
 auth:
-  postgresPassword: <path:/secrets/data/application#postgresPassword>
-  username: <path:/secrets/data/application#username>
-  password: <path:/secrets/data/application#password>
-  database: <path:/secrets/data/application#database>
+  postgresPassword: <path:secrets/aop/data/application#postgresPassword>
+  username: <path:secrets/aop/data/application#username>
+  password: <path:secrets/aop/data/application#password>
+  database: <path:secrets/aop/data/application#database>
