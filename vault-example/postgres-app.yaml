@@ -13,6 +13,11 @@ spec:
   syncPolicy: {}
   source:
     path: postgres-example
+    plugin:
+      name: argocd-vault-plugin-helm
+      env:
+        - name: helm_args
+          value: -f values.yaml
     repoURL: https://github.com/dhinakar2707/argocd-aop.git
     targetRevision: HEAD
     # helm specific config
