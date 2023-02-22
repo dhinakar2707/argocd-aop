@@ -27,5 +27,10 @@ spec:
     plugin:
       #name: argocd-vault-plugin-helm
       env:
-        - name: HELM_ARGS
-          value: -f values.yaml
+        - name: HELM_VALUES
+          value: |
+            auth:
+              postgresPassword: <path:secrets/aop/data/application#postgresPassword>
+              username: <path:secrets/aop/data/application#username>
+              password: <path:secrets/aop/data/application#password>
+              database: <path:secrets/aop/data/application#database> 
