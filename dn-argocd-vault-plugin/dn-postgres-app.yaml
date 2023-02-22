@@ -22,11 +22,11 @@ spec:
       # Helm values files for overriding values in the helm chart
       # The path is relative to the spec.source.path directory defined above
       parameters:
-      - name: postgresPassword
+      - name: auth.postgresPassword
         value: <postgresPassword>
-      - name: username
+      - name: auth.username
         value: <username>
-      - name: password
+      - name: auth.password
         value: <password>
-      - name: database
+      - name: auth.database
         value: <database>
