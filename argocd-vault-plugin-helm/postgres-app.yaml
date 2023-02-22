@@ -12,7 +12,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   syncPolicy: {}
   source:
-    path: postgres-example
+    path: argocd-vault-plugin-helm
     repoURL: https://github.com/dhinakar2707/argocd-aop.git
     targetRevision: HEAD
     plugin:
