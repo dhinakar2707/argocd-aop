@@ -16,7 +16,7 @@ spec:
     repoURL: https://github.com/dhinakar2707/argocd-aop.git
     targetRevision: HEAD
     plugin:
-      name: argocd-vault-plugin-helm
+      #name: argocd-vault-plugin-helm
       env:
         - name: HELM_ARGS
           value: -f value.yaml
