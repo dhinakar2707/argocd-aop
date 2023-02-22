@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   destination:
-    namespace: postgres-example
+    namespace: default
     server: 'https://kubernetes.default.svc'
   syncPolicy: {}
   source:
