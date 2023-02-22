@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   destination:
-    namespace: default
+    namespace: postgres-example
     server: 'https://kubernetes.default.svc'
   syncPolicy: {}
   source:
@@ -17,20 +17,14 @@ spec:
     targetRevision: HEAD
     # helm specific config
     helm:
-      # Release name override (defaults to application name)
-      #releaseName: usage-postgres
-
       # Helm values files for overriding values in the helm chart
       # The path is relative to the spec.source.path directory defined above
-      #valueFiles:
-      #- values.yaml
-    plugin:
-      name: argocd-vault-plugin-helm
-      env:
-        - name: HELM_VALUES
-          value: |
-            auth:
-              postgresPassword: <path:secrets/aop/data/application#postgresPassword>
-              username: <path:secrets/aop/data/application#username>
-              password: <path:secrets/aop/data/application#password>
-              database: <path:secrets/aop/data/application#database> 
+      parameters:
+      - name: postgresPassword
+        value: <postgresPassword>
+      - name: username
+        value: <username>
+      - name: password
+        value: <password>
+      - name: database
+        value: <database>
