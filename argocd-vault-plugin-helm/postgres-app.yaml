@@ -15,16 +15,8 @@ spec:
     path: postgres-example
     repoURL: https://github.com/dhinakar2707/argocd-aop.git
     targetRevision: HEAD
-    # helm specific config
-    helm:
-      # Helm values files for overriding values in the helm chart
-      # The path is relative to the spec.source.path directory defined above
-      parameters:
-      - name: postgresPassword
-        value: <postgresPassword>
-      - name: username
-        value: <username>
-      - name: password
-        value: <password>
-      - name: database
-        value: <database>
+    plugin:
+      name: argocd-vault-plugin-helm
+      env:
+        - name: HELM_VALUES
+          value: -f value.yaml
