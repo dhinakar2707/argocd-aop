@@ -14,7 +14,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   syncPolicy: {}
   source:
-    path: postgres-example
+    path: dn-postgres-example
     repoURL: https://github.com/dhinakar2707/argocd-aop.git
     targetRevision: HEAD
     # helm specific config
