@@ -25,7 +25,7 @@ spec:
       #valueFiles:
       #- values.yaml
     plugin:
-      #name: argocd-vault-plugin-helm
+      name: argocd-vault-plugin-helm
       env:
         - name: HELM_VALUES
           value: |
