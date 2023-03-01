@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: postgres-example
-  namespace: argocd
+  namespace: argocd-aop
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
