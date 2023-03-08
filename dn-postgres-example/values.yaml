@@ -1,0 +1,8 @@
+postgresql:
+  global:
+    postgresql:
+      auth:
+        postgresPassword: <path:kv/data/postgresql#postgresPassword>
+        username: <path:kv/data/postgresql#username>
+        password: <path:kv/data/postgresql#password>
+        database: <path:kv/data/postgresql#database>
