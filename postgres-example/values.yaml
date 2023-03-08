@@ -1,5 +1,8 @@
-auth:
-  postgresPassword: <path:secrets/aop/data/application#postgresPassword>
-  username: <path:secrets/aop/data/application#username>
-  password: <path:secrets/aop/data/application#password>
-  database: <path:secrets/aop/data/application#database>
+postgresql:
+  global:
+    postgresql:
+      auth:
+        postgresPassword: <path:secret/aop/data/database#postgresPassword>
+        username: <path:secret/aop/data/database#username>
+        password: <path:secret/aop/data/database#password>
+        database: <path:secret/aop/data/database#database>
